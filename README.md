@@ -160,7 +160,7 @@ For `<REGION>`, be sure to use any of the following 2-letter countries. Each cou
 - ZA (South Africa)
 - MU (Mauritius)
 
-#License
+# License
 
 Copyright 2018 Alex Sopinka
 
