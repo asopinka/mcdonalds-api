@@ -19,8 +19,8 @@ OR
 ```javascript
 const McDonaldsApi = require('mcdonalds-api')(<REGION>)
 
-const getLocations = async (latitude, longitude, count) => {
-	const locations = await McDonaldsApi.getLocations(latitude, longitude, count)
+const getLocations = async (latitude, longitude, radius, count) => {
+	const locations = await McDonaldsApi.getLocations(latitude, longitude, radius, count)
 	
 	/* DO ANY MANIPULATION TO THE RESULTS HERE */
 	
@@ -28,7 +28,11 @@ const getLocations = async (latitude, longitude, count) => {
 }
 ```
 
+### Parameters
+
 For `<REGION>`, be sure to use any of the following 2-letter countries. Each country is divided into its continent(s) and sorted from highest number of McDonald's restaurants to lowest.
+
+When calling `getLocations` include a latitude, a longitude, the radius around that point you would like to search, and the count of results you would like back.
 
 ### North America
 
